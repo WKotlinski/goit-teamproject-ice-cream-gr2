@@ -3,5 +3,135 @@
  * Wszystkie partials podłączamy tutaj.
  */
 
-// Style dla pliku z przykładem HTML fragmentu
-@import './example';
+@import url('/src/css/partials/variables.css');
+/* Reset  */
+html,
+div,
+span,
+object,
+iframe,
+p,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+i,
+center,
+dl,
+dt,
+dd,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ul,
+ol,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+/* Fonty
+font-family: 'DM Sans', sans-serif;
+font-family: '', sans-serif;
+font-family: 'Seymour One', sans-serif; */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: hsla(0, 0%, 7%, 1);
+  text-decoration: none;
+  background-color: var(--pastel);
+  font-size: 16px;
+}
