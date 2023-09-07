@@ -78,6 +78,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 ul,
 ol,
 menu {
@@ -85,9 +86,11 @@ menu {
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
 }
+
 h1,
 h2,
 h3,
@@ -124,6 +127,7 @@ html {
 font-family: 'DM Sans', sans-serif;
 font-family: '', sans-serif;
 font-family: 'Seymour One', sans-serif; */
+
 body {
   font-family: 'Montserrat', sans-serif;
   color: hsla(0, 0%, 7%, 1);
