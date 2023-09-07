@@ -3,24 +3,16 @@
  * Wszystkie partials podłączamy tutaj.
  */
 
+@import url('/src/css/partials/variables.css');
 /* Reset  */
 html,
-body,
 div,
 span,
-applet,
 object,
 iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p,
 blockquote,
 pre,
-a,
 abbr,
 acronym,
 address,
@@ -30,7 +22,6 @@ code,
 del,
 dfn,
 em,
-img,
 ins,
 kbd,
 q,
@@ -42,16 +33,11 @@ strong,
 sub,
 sup,
 tt,
-var,
-b,
-u,
 i,
 center,
 dl,
 dt,
 dd,
-ol,
-ul,
 li,
 fieldset,
 form,
@@ -118,6 +104,11 @@ img {
   height: auto;
 }
 
+html {
+  overflow: auto;
+  box-sizing: border-box;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -129,6 +120,14 @@ img {
   clip-path: inset(100%);
   overflow: hidden;
 }
-
+/* Fonty
+font-family: 'DM Sans', sans-serif;
+font-family: '', sans-serif;
+font-family: 'Seymour One', sans-serif; */
 body {
+  font-family: 'Montserrat', sans-serif;
+  color: hsla(0, 0%, 7%, 1);
+  text-decoration: none;
+  background-color: var(--pastel);
+  font-size: 16px;
 }
