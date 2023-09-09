@@ -7,11 +7,21 @@
 >
   blabla
 </button>
-<div class="menu-container js-menu-container is-open" id="mobile-menu">
-  <div class="container">
+<div class="menu js-menu-container is-open" id="mobile-menu">
+  <div class="menu-container">
     <div class="menu-mob__header">
       <a href="#" class="logo">
-        <img src="./images/logo.png" alt="logo" width="40" height="37" />
+        <img
+          srcset="
+            ./images/logo-mob@1x.png 40w,
+            ./images/logo-mob@2x.png 80w,
+            ./images/logo-tab@1x.png 48w,
+            ./images/logo-tab@2x.png 96w
+          "
+          sizes="(min-width:768px) 48px, 40px"
+          src="./images/logo.png"
+          alt="logo"
+        />
       </a>
       <button type="button" class="menu-mob__close js-close-menu">
         <svg class="menu-mob__icon-close" width="32" height="32">
