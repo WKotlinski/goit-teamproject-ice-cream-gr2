@@ -7,7 +7,7 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
       rel="stylesheet"
     />
-    <title>Nagłówek strony</title>
+    <title>Ice Cream Company</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -24,10 +24,26 @@
   </head>
   <body>
     <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
+<header>
+  <include src="./partials/header.html"></include>
+</header>
+<main>
+  <include src="./partials/menu.html"></include>
+  <include src="./partials/products.html"></include>
+  <include src="./partials/about.html"></include>
+  <include src="./partials/advantages1.html"></include>
+  <include src="./partials/gallery.html"></include>
+  <include src="./partials/customer-reviews.html"></include>
+  <include src="./partials/contacts.html"></include>
+</main>
 
-    <include src="./partials/header.html"></include>
-    <include src="./partials/example.html"></include>
-    <include src="./partials/customer-reviews.html"></include>
+
+
+<footer>
+  <include src="./partials/footer.html"></include>
+</footer>
+
+
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
     <script src="./index.js" type="module"></script>
   </body>
