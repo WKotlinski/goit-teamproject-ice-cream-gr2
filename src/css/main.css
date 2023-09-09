@@ -5,6 +5,8 @@
 
 @import url('/src/css/partials/variables.css');
 @import url('/src/css/partials/menu.css');
+@import url('/src/css/partials/adventages.css');
+
 /* Reset  */
 html,
 div,
@@ -124,10 +126,11 @@ html {
   clip-path: inset(100%);
   overflow: hidden;
 }
+
 /* Fonty
-font-family: 'DM Sans', sans-serif;
-font-family: '', sans-serif;
-font-family: 'Seymour One', sans-serif; */
+ font-family: 'DM Sans', sans-serif;
+ font-family: '', sans-serif;
+ font-family: 'Seymour One', sans-serif; */
 
 body {
   font-family: 'Montserrat', sans-serif;
