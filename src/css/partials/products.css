@@ -1,5 +1,5 @@
 .products {
-  background-image: url(../../images/ice-cream-bg-mobile.jpg);
+  background-image: url('../../images/ice-cream-bg-mobile.jpg');
   background-size: 480px;
   background-position: right;
 }
@@ -61,7 +61,7 @@
   content: '';
   width: 200px;
   height: 200px;
-  background-image: url(../../images/ice-cream-products.jpg);
+  background-image: url('../../images/ice-cream-products.jpg');
   background-size: cover;
   border-radius: 50%;
   position: absolute;
@@ -85,7 +85,7 @@
   content: '';
   width: 200px;
   height: 200px;
-  background-image: url(../../images/ice-coffee-products.jpg);
+  background-image: url('../../images/ice-coffee-products.jpg');
   background-size: cover;
   border-radius: 50%;
   position: absolute;
@@ -109,7 +109,7 @@
   content: '';
   width: 200px;
   height: 200px;
-  background-image: url(../../images/milkshakes-products.jpg);
+  background-image: url('../../images/milkshakes-products.jpg');
   background-size: cover;
   border-radius: 50%;
   position: absolute;

@@ -5,7 +5,7 @@
 
 @import url('/src/css/partials/variables.css');
 @import url(/src/css/partials/adventages.css);
-@import url(/src/css/partials/products.css);
+@import url('/src/css/partials/products.css');
 /* Reset  */
 html,
 div,
