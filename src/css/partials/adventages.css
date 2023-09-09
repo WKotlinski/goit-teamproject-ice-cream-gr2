@@ -1,0 +1,39 @@
+.adv-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.adv-layout:last-child {
+  margin-bottom: 0;
+}
+.icon-background {
+  color: var(--white);
+  background-color: var(--yellow);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  padding: 7px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.adv-first-paragraph {
+  color: var(--white);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+}
+.adv-sec-paragraph {
+  color: var(--white);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  width: 230px;
+  text-align: center;
+}
