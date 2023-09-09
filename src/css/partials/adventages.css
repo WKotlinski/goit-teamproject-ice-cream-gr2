@@ -21,7 +21,6 @@
 }
 .adv-first-paragraph {
   color: var(--white);
-  font-family: Montserrat;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -31,7 +30,6 @@
 }
 .adv-sec-paragraph {
   color: var(--white);
-  font-family: Montserrat;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
