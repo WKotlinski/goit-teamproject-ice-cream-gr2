@@ -14,4 +14,6 @@
   --iceream-theme: hsla(103, 27%, 65%, 1);
   --milkshake-theme: hsla(22, 56%, 63%, 1);
 
+  --outline-1: red 2px dashed;
+  --outline-2: green 2px dashed;
 }
