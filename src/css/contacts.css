@@ -1,224 +1,155 @@
-
-:root {
-    --black: hsla(0, 0%, 0%, 1);
-    --not-so-black: hsla(0, 0%, 7%, 1);
-    --white: hsla(0, 0%, 100%, 1);
-    --grey: hsla(0, 0%, 67%, 1);
-    --yellow: hsla(47, 92%, 64%, 1);
-    --pastel: hsla(102, 18%, 55%, 1);
-    --form-border: hsla(102, 18%, 55%, 1);
-    --form-bg: hsla(47, 92%, 64%, 0.1);
-}
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
-
-/* Reset  */
-html,
-div,
-span,
-object,
-iframe,
-p,
-blockquote,
-pre,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-i,
-center,
-dl,
-dt,
-dd,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-ul,
-ol,
-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-html {
-    overflow: auto;
-    box-sizing: border-box;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    overflow: hidden;
-}
-
-/* Fonty
- font-family: 'DM Sans', sans-serif;
- font-family: '', sans-serif;
- font-family: 'Seymour One', sans-serif; */
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    color: hsla(0, 0%, 7%, 1);
-    text-decoration: none;
-    background-color: var(--pastel);
-    font-size: 16px;
-}
-
 /*              CONTACTS         */
 
 
-.contact {position: relative;}
+.contact {
+    padding-bottom: 60px;}
 
-.contacts-list {flex-direction: column;
+.contacts-list {
     gap: 20px;
-    display: flex;
-    position: absolute;
-    top: -346px;
-    left: 50%;
-    transform: translate(-50%);
+    display: grid;
+    justify-content: center;
 }
 
-.contacts-main-item {width: 280px;
-    background-color: #fcfcfc;
+.contacts-main-item {
+    width: 280px;
+    background-color: var(--white);
     border-radius: 24px;
-    padding: 38px 32px 40px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 1.86;
-    box-shadow: 0 8px 30px rgba(212, 20, 67, .1);}
+    padding: 40px 32px 24px 32px;
+    box-shadow: 0 8px 30px 0px rgba(212, 20, 67, 0.1);
+}
 
-.contacts-place-type {min-width: 80px;
+.contacts-place-type {
     text-align: center;
-    background-color: #f8d24e;
+    font-size: 12px;
+    letter-spacing: 0.48px;
+    min-width: 80px;
+    background-color: var(--yellow);
     border-radius: 4px;
     margin-bottom: 20px;
-    padding: 0 20.5px;
-    line-height: 1.33;
+    padding: 4px 20.5px;
     display: inline-block;
 }
 
-.contacts-city {border-bottom: 1px solid #e1e1e1;
-    margin-bottom: 22px;
-    padding-bottom: 16px;}
+.contacts-city {
+    font-size: 12px;
+    letter-spacing: 0.48px;
+    border-bottom: 1px solid hsla(0, 0%, 88%, 1);
+    padding-bottom: 24px;}
 
-.contacts-adress {color: #d6936d;
+.contacts-adress {
+    color: hsla(22, 56%, 63%, 1);
     margin-top: 8px;
     line-height: 1.83;
-    display: block;}
-
-.contacts-workhours {letter-spacing: normal;
-    margin-bottom: 8px px;
+    display: block;
 }
 
-.contacts-workhours-wrapper {color: #ababab;
+.contacts-workhours-box {
+    padding: 24px 0;
+    display: grid;
+    gap: 8px;
+    border-bottom: 1px solid hsla(0, 0%, 88%, 1);
+
+}
+
+.contacts-workhours-opentime {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-workhours {
     letter-spacing: normal;
-    display: block;}
+    font-size: 12px;
+    line-height: 1.86;
+}
 
-.contacts-tel {letter-spacing: normal;
-    line-height: 1.5;
-    display: block;}
+.contacts-workhours-wrapper {
+    color: var(--grey);
+    display: block;
+    font-size: 12px;
+    line-height: 1.86;
+}
 
-.contacts-email {letter-spacing: normal;
-    line-height: 1.5;
-    display: block;}
+.contact-details a {
+    color: var(--not-so-black);
+}
 
-.contacts-buttons {flex-direction: column;
+.contacts-details {
+    font-size: 12px;
+    line-height: 1.6;
+    padding-top: 24px;
+}
+
+.contacts-tel {
+    color: var(--not-so-black);
+}
+
+.contacts-email {
+        color: var(--not-so-black);
+}
+
+.contacts-buttons-list {
+    margin-top: 20px;
+    flex-direction: column;
     align-items: center;
     gap: 16px;
-    display: flex;}
-
-.contacts-buttons-locations {}
-
-.contacts-button-location-wrapper {min-width: 196px;
-    justify-content: center;
-    align-items: center;
-    gap: 11px;
     display: flex;
 }
-
+/*
+.contacts-buttons-locations {}
+*/
+.contacts-button-location-wrapper {
+    background-color: var(--yellow);
+    min-width: 196px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    display: flex;
+    transition: fill .25s cubic-bezier(.4, 0, .2, 1), color .25s cubic-bezier(.4, 0, .2, 1), background-color .25s cubic-bezier(.4, 0, .2, 1);
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    outline: none;
+    padding: 12px 32px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.29;
+    
+}
+.contacts-button-location-wrapper:hover {
+    background-color: #0a8817;
+}
+.contacts-button-location-wrapper:focus {
+    background-color: #0a8817;
+    color: var(--white);
+    fill: var(--white);
+}
+/*
 .contacts-button-franchise {}
+*/
 
-.contacts-button-franchise-wrapper {}
+.contacts-button-franchise-wrapper {
+    background-color: transparent;
+    min-width: 196px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    display: flex;
+    transition: fill .25s cubic-bezier(.4, 0, .2, 1), color .25s cubic-bezier(.4, 0, .2, 1), border-color .25s cubic-bezier(.4, 0, .2, 1); 
+    cursor: pointer;
+    border-color: var(--yellow);
+    border: 2px solid var(--yellow);
+    border-radius: 8px;
+    outline: none;
+    padding: 12px 32px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.29;
+}
+.contacts-button-franchise-wrapper:hover {
+    border-color: #0a8817;
+}
+.contacts-button-franchise-wrapper:focus {
+    border-color: #0a8817;
+    color: var(--white);
+    fill: var(--white);
+}
