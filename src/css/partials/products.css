@@ -151,7 +151,7 @@
 }
 @media screen and (min-width: 768px) {
   .products {
-    background-image: url('../../images/ice-cream-bg-tablet1x.jpg');
+    background-image: url('../../images/Ice-cream-bg-tablet1x.jpg');
   }
   .products-pre-title {
     font-size: 22px;
@@ -188,7 +188,7 @@
 }
 @media screen and (min-width: 1200px) {
   .products {
-    background-image: url('../../images/ice-cream-bg-desk1x.jpg');
+    background-image: url('../../images/Ice-cream-bg-desk1x.jpg');
   }
   .products-pre-title {
     font-size: 30px;
@@ -246,8 +246,8 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .products {
-    background-image: url('../../images/ice-cream-bg-mobile2x.jpg'),
-      url('../../images/ice-cream-bg-tablet2x.jpg'), url('../../images/ice-cream-bg-desk2x.jpg');
+    background-image: url('../../images/Ice-cream-bg-mobile2x.jpg'),
+      url('../../images/Ice-cream-bg-tablet2x.jpg'), url('../../images/Ice-cream-bg-desk2x.jpg');
   }
   .products-item-green:after {
     background-image: url('../../images/ice-cream-mobile2x.jpg'),
