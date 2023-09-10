@@ -400,7 +400,7 @@ textarea::placeholder {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .modal-checkbox--green:after {
-    background-image: url(/src/images/icecreanx2.jpg);
+    background-image: url(/src/images/icecreamx2.jpg);
   }
 }
 .modal-checkbox:after {
