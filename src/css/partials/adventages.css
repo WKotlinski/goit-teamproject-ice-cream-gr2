@@ -37,3 +37,27 @@
   width: 230px;
   text-align: center;
 }
+
+/*------------------MEDIA QUERIES---------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .adv-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 80px;
+  }
+  .adv-sec-paragraph {
+    font-size: 14px;
+    line-height: 174%;
+    max-width: 152px;
+  }
+  .adv-first-paragraph {
+    font-size: 48px;
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
+  .adv-layout {
+    gap: 0;
+  }
+}
