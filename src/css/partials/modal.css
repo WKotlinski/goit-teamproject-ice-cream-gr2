@@ -111,7 +111,7 @@ textarea::placeholder {
   content: '';
   width: 131px;
   height: 131px;
-  background-image: url(..\images\Ellipse67.jpg);
+  background-image: url(/src/images/Ellipse67.jpg);
   border-radius: 50%;
   position: absolute;
   top: -7px;
@@ -182,7 +182,7 @@ textarea::placeholder {
   content: '';
   width: 131px;
   height: 131px;
-  background-image: url(../images/milkshake.jpg);
+  background-image: url(/src/images/milkshake.jpg);
   background-size: cover;
   border-radius: 50%;
   position: absolute;
@@ -202,7 +202,7 @@ textarea::placeholder {
   content: '';
   width: 131px;
   height: 131px;
-  background-image: url(../images/ice-coffe.jpg);
+  background-image: url(/src/images/icecoffe.jpg);
   background-size: cover;
   border-radius: 50%;
   position: absolute;
@@ -287,7 +287,7 @@ textarea::placeholder {
   box-shadow: 0 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
 .modal-checkbox--green:after {
-  background: url(../images/icecream.jpg) 50% / cover no-repeat;
+  background: url(/src/images/icecream.jpg) 50% / cover no-repeat;
 }
 .modal-checkbox:after {
   content: '';
@@ -307,7 +307,7 @@ textarea::placeholder {
   box-shadow: 0 5.26027px 19.726px rgba(153, 114, 23, 0.25);
 }
 .modal-checkbox--yellow:after {
-  background: url(../images/icecoffe.jpg) 50% / cover no-repeat;
+  background: url(/src/images/icecoffe.jpg) 50% / cover no-repeat;
 }
 .modal-checkbox--brown {
   border-color: var(--milkshake-theme);
@@ -317,7 +317,7 @@ textarea::placeholder {
   box-shadow: 0 5.26027px 19.726px rgba(0, 0, 0, 0.25);
 }
 .modal-checkbox--brown:after {
-  background: url(../images/milkshake.jpg) 50% / cover no-repeat;
+  background: url(/src/images/milkshake.jpg) 50% / cover no-repeat;
 }
 .margin {
   margin-bottom: 31px;
