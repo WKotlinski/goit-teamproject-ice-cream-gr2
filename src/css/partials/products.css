@@ -60,7 +60,7 @@
   content: '';
   width: 200px;
   height: 200px;
-  background-image: url('../../images/ice-cream-mobile1x.jpg');
+  background-image: url('/src/images/ice-cream-mobile1x.jpg');
   background-size: cover;
   border-radius: 50%;
   position: absolute;
