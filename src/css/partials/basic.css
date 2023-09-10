@@ -138,6 +138,12 @@ body {
   outline: var(--outline-1);
 }
 
+@media (min-width: 480px) {
+  .container {
+    width: 428px;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     width: 768px;
