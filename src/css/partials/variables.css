@@ -2,9 +2,18 @@
   --black: hsla(0, 0%, 0%, 1);
   --not-so-black: hsla(0, 0%, 7%, 1);
   --white: hsla(0, 0%, 100%, 1);
+  --not-so-white: hsla(0, 0%, 99%, 1);
+  --white-text: hsla(0, 0%, 99%, 1);
   --grey: hsla(0, 0%, 67%, 1);
   --yellow: hsla(47, 92%, 64%, 1);
+  --yellow-form-bg: hsla(47, 92%, 64%, 0.1);
   --pastel: hsla(102, 18%, 55%, 1);
-  --form-border: hsla(102, 18%, 55%, 1);
+  --form-border: hsla(126, 86%, 29%, 1);
   --form-bg: hsla(47, 92%, 64%, 0.1);
+  --btn-hover: hsla(126, 86%, 29%, 1);
+  --iceream-theme: hsla(103, 27%, 65%, 1);
+  --milkshake-theme: hsla(22, 56%, 63%, 1);
+
+  --outline-1: red 2px dashed;
+  --outline-2: green 2px dashed;
 }
