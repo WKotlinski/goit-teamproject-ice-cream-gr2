@@ -1,9 +1,17 @@
 <!-- Kod napisany przez Ariela, sprawdzony i poprawiony przez WKotlinski -->
 <div class="container">
   <nav>
-    <svg class="header-logo" width="60px" height="65px">
-      <use href="./images/logo-header.svg" />
-    </svg>
+    <img
+      srcset="
+        ./images/logo-mob@1x.png 40w,
+        ./images/logo-mob@2x.png 80w,
+        ./images/logo-tab@1x.png 48w,
+        ./images/logo-tab@2x.png 96w
+      "
+      sizes="(min-width:768px) 48px, 40px"
+      src="./images/logo.png"
+      alt="logo"
+    />
     <ul class="header-menu">
       <li><a href="#id">Home</a></li>
       <li><a href="#id">How it's made?</a></li>
