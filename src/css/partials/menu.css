@@ -1,0 +1,125 @@
+.menu {
+  position: fixed;
+  background-color: var(--pastel);
+  inset: 0;
+  transform: translateX(100%);
+  width: 100%;
+  height: 100%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu.is-open {
+  transform: translateX(0);
+}
+
+.menu-container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+.menu-mob__header {
+  display: flex;
+  padding: 12px 0;
+  margin-bottom: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-mob__header {
+    padding: 20px 0;
+  }
+}
+
+.logo {
+  top: 12px;
+  left: 32px;
+}
+
+.menu-mob__close {
+  cursor: pointer;
+  border: none;
+  background-color: var(--pastel);
+  margin-left: auto;
+}
+
+.menu-mob__nav {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 110px;
+}
+
+.menu-mob__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-mob__link {
+  color: var(--white);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-mob__link {
+    font-size: 48px;
+  }
+}
+
+.menu-mob__link:hover,
+.menu-mob__link:focus {
+  color: var(--black);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-mob__buy {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 36px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--yellow);
+}
+
+.menu-mob__buy:hover {
+  background-color: var(--form-border);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-mob__buy:focus {
+  background-color: var(--form-border);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--white);
+  fill: var(--white);
+}
+
+.menu-mob__buy:disabled {
+  background-color: var(--grey);
+}
+
+@media screen and (min-width: 768px) {
+  .menu-mob__buy {
+    display: none;
+  }
+}

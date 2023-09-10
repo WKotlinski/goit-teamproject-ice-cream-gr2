@@ -1,26 +1,60 @@
-<div>
-  <div>
-    <a href="#">
-      <img src="./images/logo.png" alt="logo" width="40px" height="37px" />
-    </a>
-    <button type="button">
-      <svg width="32" height="32">
-        <use href="./images/icons-menu.svg#icon-ep_close"></use>
-      </svg>
-    </button>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="#header">Home</a></li>
-      <li><a href="#about">How it's made?</a></li>
-      <li><a href="#products">Our products</a></li>
-      <li><a href="#contacts">Contacts</a></li>
-    </ul>
-  </nav>
-  <button type="button" data-modal-open="buy-now">
+
+
+<!--Tymczasowy przycisk-->
+<button
+  type="button"
+  class="btn-hamburger js-open-menu"
+  aria-expanded="false"
+  aria-controls="mobile-menu"
+>
+  blabla
+</button>
+<div class="menu js-menu-container is-open" id="mobile-menu">
+  <div class="menu-container">
+    <div class="menu-mob__header">
+      <a href="#" class="logo">
+        <img
+          srcset="
+            ./images/logo-mob@1x.png 40w,
+            ./images/logo-mob@2x.png 80w,
+            ./images/logo-tab@1x.png 48w,
+            ./images/logo-tab@2x.png 96w
+          "
+          sizes="(min-width:768px) 48px, 40px"
+          src="./images/logo.png"
+          alt="logo"
+        />
+      </a>
+      <button type="button" class="menu-mob__close js-close-menu">
+        <svg class="menu-mob__icon-close" width="32" height="32">
+          <use href="./images/icons-menu.svg#icon-ep_close"></use>
+        </svg>
+      </button>
+    </div>
+    <nav class="menu-mob__nav">
+      <ul class="menu-mob__list">
+        <li class="menu-mob__item">
+          <a class="menu-mob__link" href="#header">Home</a>
+        </li>
+        <li class="menu-mob__item"><a class="menu-mob__link" href="#about">How it's made?</a></li>
+        <li class="menu-mob__item">
+          <a class="menu-mob__link" href="#products">Our products</a>
+        </li>
+        <li class="menu-mob__item"><a class="menu-mob__link" href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+      <button type="button" data-modal-open="buy-now">
     Buy now
     <svg width="12" height="12">
       <use href="./images/icons-menu.svg#icon-ep_arrow-right-bold"></use>
     </svg>
   </button>
+  </div>
 </div>
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
+<script defer src="./menu.js"></script>
