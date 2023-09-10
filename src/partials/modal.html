@@ -1,166 +1,442 @@
-<!-- Modal buy now -->
-<div>
-  <div>
-    <h2>Buy now</h2>
-    <form>
-      <div><input type="checkbox" name="buy" value="ice cream" /><label>ice cream</label></div>
-      <div><input type="checkbox" name="buy" value="ice coffee" /><label>ice coffee</label></div>
-      <div><input type="checkbox" name="buy" value="milkshake" /><label>milkshake</label></div>
-      <div>
-        <input
-          type="text"
-          name="name"
-          id="products-name"
-          placeholder=" "
-          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-          required
-          minlength="2"
-        /><label for="products-name">Name</label>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <title>Ice Cream Company</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Montserrat:wght@400;700;900&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Modal buy now -->
+    <div class="backdrop visually-hidden" data-modal="buy-now">
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close="buy-now">
+          <svg class="close-button__icon" width="20" height="20">
+            <use href="..\images\icons.svg#icon-clarity_close-line"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Buy now</h2>
+        <form class="modal-form" name="modal-form">
+          <div class="modal-checkbox__container">
+            <div class="modal-checkbox modal-checkbox--green">
+              <input type="checkbox" name="buy" value="ice cream" id="check1" /><label for="check1"
+                ><span class="check-span">ice cream</span></label
+              >
+            </div>
+            <div class="modal-checkbox modal-checkbox--yellow">
+              <input type="checkbox" name="buy" value="ice coffee" id="check2" /><label for="check2"
+                ><span class="check-span">ice coffee</span></label
+              >
+            </div>
+            <div class="modal-checkbox modal-checkbox--brown margin">
+              <input type="checkbox" name="buy" value="milkshake" id="check3" /><label for="check3"
+                ><span class="check-span">milkshake</span></label
+              >
+            </div>
+          </div>
+          <div class="modal-form__input-wrapper">
+            <input
+              class="modal-form__input"
+              type="text"
+              name="name"
+              id="products-name"
+              placeholder="Name"
+              pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+              required
+              minlength="2"
+            /><label for="products-name" class="modal-form__label">Name</label>
+          </div>
+          <div class="modal-form__input-wrapper">
+            <input
+              class="modal-form__input"
+              type="tel"
+              name="tel"
+              id="products-tel"
+              placeholder="Phone"
+              required
+              minlength="9"
+            /><label for="products-tel" class="modal-form__label">Phone</label>
+          </div>
+          <div class="modal-form__input-wrapper modal-form__input-wrapper--textarea">
+            <textarea
+              name="modal-form__textarea"
+              class="modal-form__input modal-form__input--textarea"
+              id="products-comment"
+              placeholder="Comment"
+            ></textarea
+            ><label for="products-comment" class="modal-form__label">Comment</label>
+          </div>
+          <button class="btn btn--primary" type="submit">Submit</button>
+        </form>
       </div>
-      <div>
-        <input
-          type="tel"
-          name="tel"
-          id="products-tel"
-          placeholder=" "
-          required
-          minlength="9"
-        /><label for="products-tel">Phone</label>
+    </div>
+    <!-- Modal icecream -->
+    <div class="backdrop visually-hidden" data-modal="icecream">
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close="buy-now">
+          <svg class="close-button__icon" width="20" height="20">
+            <use href="..\images\icons.svg#icon-clarity_close-line"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Chocolate icecream</h2>
+        <div class="modal__image"></div>
+        <div>
+          <ul class="modal-products-list">
+            <li class="modal-products-list__item">
+              <span class="modal-products-list__icons-text">320</span>kcal
+            </li>
+            <li class="modal-products-list__item">
+              <span class="modal-products-list__icons-text">4g</span>Protein
+            </li>
+            <li class="modal-products-list__item">
+              <span class="modal-products-list__icons-text">8,2g</span>Fats
+            </li>
+            <li class="modal-products-list__item">
+              <span class="modal-products-list__icons-text">40,4g</span>Carbs
+            </li>
+          </ul>
+          <p class="modal-products__content">Ingredients</p>
+          <ul class="modal-products-elements">
+            <li class="modal-products-elements__item">Milk<span>100ml</span></li>
+            <li class="modal-products-elements__item">Belgian chocolate<span>20g</span></li>
+            <li class="modal-products-elements__item">Cream<span></span>150 ml</li>
+            <li class="modal-products-elements__item">Cocoa powder<span>30g</span></li>
+            <li class="modal-products-elements__item">Sugar<span></span>40g</li>
+            <li class="modal-products-elements__item">Vanilla sugar<span>10g</span></li>
+          </ul>
+          <form class="modal-form" name="modal-form">
+            <div class="modal-form__input-wrapper">
+              <input
+                class="modal-form__input"
+                type="text"
+                name="name"
+                id="icecream-name"
+                placeholder="Name"
+                required
+                minlength="2"
+              /><label class="modal-form__label" for="icecream-name">Name</label>
+            </div>
+            <div class="modal-form__input-wrapper">
+              <input
+                class="modal-form__input"
+                type="tel"
+                name="tel"
+                id="icecream-tel"
+                placeholder="Phone"
+                required
+                minlength="9"
+              /><label class="modal-form__label" for="icecream-tel">Phone</label>
+            </div>
+            <div class="modal-form__input-wrapper">
+              <textarea
+                name="modal-form__textarea"
+                class="modal-form__input modal-form__input--textarea"
+                id="icecream-comment"
+                placeholder="Comment"
+              ></textarea
+              ><label class="modal-form__label" for="icecream-comment">Comment</label>
+            </div>
+            <button class="btn btn--primary" type="submit">Submit</button>
+          </form>
+        </div>
       </div>
-      <div>
-        <textarea name="modal-form__textarea" id="products-comment" placeholder=" "></textarea
-        ><label for="products-comment">Comment</label>
+    </div>
+    <!-- modal milkshake -->
+    <div class="backdrop visually-hidden" data-modal="milkshakes">
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close="buy-now">
+          <svg class="close-button__icon" width="20" height="20">
+            <use href="..\images\icons.svg#icon-clarity_close-line"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Milkshake</h2>
+        <div class="modal__image--milkshakes"></div>
+        <div>
+          <ul class="modal-products-list">
+            <li class="modal-products-list__item" style="border-color: rgb(214, 147, 109)">
+              <span
+                class="modal-products-list__icons-text"
+                style="background-color: rgb(214, 147, 109)"
+                >320</span
+              >kcal
+            </li>
+            <li class="modal-products-list__item" style="border-color: rgb(214, 147, 109)">
+              <span
+                class="modal-products-list__icons-text"
+                style="background-color: rgb(214, 147, 109)"
+                >4g</span
+              >Protein
+            </li>
+            <li class="modal-products-list__item" style="border-color: rgb(214, 147, 109)">
+              <span
+                class="modal-products-list__icons-text"
+                style="background-color: rgb(214, 147, 109)"
+                >8,2g</span
+              >Fats
+            </li>
+            <li class="modal-products-list__item" style="border-color: rgb(214, 147, 109)">
+              <span
+                class="modal-products-list__icons-text"
+                style="background-color: rgb(214, 147, 109)"
+                >40,4g</span
+              >Carbs
+            </li>
+          </ul>
+          <p class="modal-products__content">Ingredients</p>
+          <ul class="modal-products-elements">
+            <li class="modal-products-elements__item">Milk<span>100ml</span></li>
+            <li class="modal-products-elements__item">Belgian chocolate<span>20g</span></li>
+            <li class="modal-products-elements__item">Cream<span></span>150 ml</li>
+            <li class="modal-products-elements__item">Cocoa powder<span>30g</span></li>
+            <li class="modal-products-elements__item">Sugar<span></span>40g</li>
+            <li class="modal-products-elements__item">Vanilla sugar<span>10g</span></li>
+          </ul>
+          <form class="modal-form" name="modal-form">
+            <div class="modal-form__input-wrapper">
+              <input
+                class="modal-form__input"
+                type="text"
+                name="name"
+                id="milkshake-name"
+                placeholder="Name"
+                required
+                minlength="2"
+              /><label class="modal-form__label" for="milkshake-name">Name</label>
+            </div>
+            <div class="modal-form__input-wrapper">
+              <input
+                class="modal-form__input"
+                type="tel"
+                name="tel"
+                id="milkshake-tel"
+                placeholder="Phone"
+                required
+                minlength="9"
+              /><label class="modal-form__label" for="milkshake-tel">Phone</label>
+            </div>
+            <div class="modal-form__input-wrapper">
+              <textarea
+                name="modal-form__textarea"
+                class="modal-form__input modal-form__input--textarea"
+                id="milkshake-comment"
+                placeholder="Comment"
+              ></textarea
+              ><label class="modal-form__label" for="milkshake-comment">Comment</label>
+            </div>
+            <button class="btn btn--primary" type="submit">Submit</button>
+          </form>
+        </div>
       </div>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-</div>
-<!-- Modal chocolate icecream -->
-<div>
-  <div>
-    <h2>Chocolate icecream</h2>
-    <div>
-      <img src="../images/Ellipse67.jpg" alt="icream cone" />
     </div>
-    <div>
-      <ul>
-        <li><span>320</span>kcal</li>
-        <li><span>4g</span>Protein</li>
-        <li><span>8,2g</span>Fats</li>
-        <li><span>40,4g</span>Carbs</li>
-      </ul>
-      <p>Ingredients</p>
-      <ul>
-        <li>Milk<span>100ml</span></li>
-        <li>Belgian chocolate<span>20g</span></li>
-        <li>Cream<span></span>150 ml</li>
-        <li>Cocoa powder<span>30g</span></li>
-        <li>Sugar<span></span>40g</li>
-        <li>Vanilla sugar<span>10g</span></li>
-      </ul>
-      <form>
+    <!-- modal ice-coffe -->
+    <div class="backdrop visually-hidden" data-modal="ice-coffe">
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close="buy-now">
+          <svg class="close-button__icon" width="20" height="20">
+            <use href="..\images\icons.svg#icon-clarity_close-line"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Ice-coffe</h2>
+        <div class="modal__image--ice-coffee"></div>
         <div>
-          <input
-            type="text"
-            name="name"
-            id="icecream-name"
-            placeholder=" "
-            required
-            minlength="2"
-          /><label for="icecream-name">Name</label>
+          <ul class="modal-products-list">
+            <li class="modal-products-list__item" style="border-color: rgb(239, 212, 120)">
+              <span
+                class="modal-products-list__icons-text"
+                style="background-color: rgb(239, 212, 120)"
+                >320</span
+              >kcal
+            </li>
+            <li class="modal-products-list__item" style="border-color: rgb(239, 212, 120)">
+              <span
+                class="modal-products-list__icons-text"
+                style="background-color: rgb(239, 212, 120)"
+                >4g</span
+              >Protein
+            </li>
+            <li class="modal-products-list__item" style="border-color: rgb(239, 212, 120)">
+              <span
+                class="modal-products-list__icons-text"
+                style="background-color: rgb(239, 212, 120)"
+                >8,2g</span
+              >Fats
+            </li>
+            <li class="modal-products-list__item" style="border-color: rgb(239, 212, 120)">
+              <span
+                class="modal-products-list__icons-text"
+                style="background-color: rgb(239, 212, 120)"
+                >40,4g</span
+              >Carbs
+            </li>
+          </ul>
+          <p class="modal-products__content">Ingredients</p>
+          <ul class="modal-products-elements">
+            <li class="modal-products-elements__item">Milk<span>100ml</span></li>
+            <li class="modal-products-elements__item">Belgian chocolate<span>20g</span></li>
+            <li class="modal-products-elements__item">Cream<span></span>150 ml</li>
+            <li class="modal-products-elements__item">Cocoa powder<span>30g</span></li>
+            <li class="modal-products-elements__item">Sugar<span></span>40g</li>
+            <li class="modal-products-elements__item">Vanilla sugar<span>10g</span></li>
+          </ul>
+          <form class="modal-form" name="modal-form">
+            <div class="modal-form__input-wrapper">
+              <input
+                class="modal-form__input"
+                type="text"
+                name="name"
+                id="ice-coffe-name"
+                placeholder="Name"
+                required
+                minlength="2"
+              /><label class="modal-form__label" for="ice-coffe-name">Name</label>
+            </div>
+            <div class="modal-form__input-wrapper">
+              <input
+                class="modal-form__input"
+                type="tel"
+                name="tel"
+                id="ice-coffe-tel"
+                placeholder="Phone"
+                required
+                minlength="9"
+              /><label class="modal-form__label" for="ice-coffe-tel">Phone</label>
+            </div>
+            <div class="modal-form__input-wrapper">
+              <textarea
+                name="modal-form__textarea"
+                class="modal-form__input modal-form__input--textarea"
+                id="ice-coffe-comment"
+                placeholder="Comment"
+              ></textarea
+              ><label class="modal-form__label" for="ice-coffe-comment">Comment</label>
+            </div>
+            <button class="btn btn--primary" type="submit">Submit</button>
+          </form>
         </div>
-        <div>
-          <input
-            type="tel"
-            name="tel"
-            id="icecream-tel"
-            placeholder=" "
-            required
-            minlength="9"
-          /><label for="icecream-tel">Phone</label>
-        </div>
-        <div>
-          <textarea name="modal-form__textarea" id="icecream-comment" placeholder=" "></textarea
-          ><label for="icecream-comment">Comment</label>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
+      </div>
     </div>
-  </div>
-</div>
-<!-- modal read more -->
-<div>
-  <div>
-    <h2>How it's made?</h2>
-    <iframe
-      width="224"
-      src="https://www.youtube.com/embed/FavUpD_IjVY"
-      title="cows &amp; cows &amp; cows"
-      frameborder="0"
-      allowfullscreen
-    ></iframe>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et
-    </p>
-  </div>
-</div>
-<!-- modal our locations -->
-<div>
-  <div>
-    <div>
-      <h2>Our Locations</h2>
-      <img src="../images/mapmobile.jpg" alt="map" /><a
-        href="https://goo.gl/maps/expSHVfVwxbLBAXM9"
-      >
-        Open map
-      </a>
+    <!-- modal read more -->
+    <div class="backdrop visually-hidden" data-modal="read-more">
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close="buy-now">
+          <svg class="close-button__icon" width="20" height="20">
+            <use href="..\images\icons.svg#icon-clarity_close-line"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">How it's made?</h2>
+        <iframe
+          class="about__video"
+          src="https://www.youtube.com/embed/FavUpD_IjVY"
+          title="cows &amp; cows &amp; cows"
+          allowfullscreen
+        ></iframe>
+        <p class="about__video-descr">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et
+        </p>
+      </div>
     </div>
-  </div>
-</div>
-<!-- modal francise  -->
-<div>
-  <div>
-    <div>
-      <h2>Thank you for your interest in owning an Ice Cream shop</h2>
-      <p>
-        Due to the overwhelming volume of franchise requests we are not accepting new franchisee
-        applications at this time. Once the application process resumes, we will contact you for
-        further information. Please fill out the contact information below and we will reach out for
-        additional information. We appreciate your patience.
-      </p>
-      <form>
-        <div>
-          <input
-            type="text"
-            name="name"
-            id="francise-name"
-            placeholder=" "
-            required
-            minlength="2"
-          /><label for="francise-name">Name</label>
+    <!-- modal our locations -->
+    <div class="backdrop visually-hidden" data-modal="our-locations">
+      <div class="modal">
+        <div class="modal__locations-container">
+          <button type="button" class="close-button" data-modal-close="buy-now">
+            <svg class="close-button__icon" width="20" height="20">
+              <use href="..\images\icons.svg#icon-clarity_close-line"></use>
+            </svg>
+          </button>
+          <h2 class="modal__title">Our Locations</h2>
+          <img class="modal__locations-map" src="../images/mapmobile.jpg" alt="map" /><a
+            class="btn btn--primary"
+            href="https://goo.gl/maps/expSHVfVwxbLBAXM9"
+          >
+            Open map
+          </a>
         </div>
-        <div>
-          <input
-            type="tel"
-            name="tel"
-            id="francise-tel"
-            placeholder=" "
-            required
-            minlength="9"
-          /><label for="francise-tel">Phone</label>
-        </div>
-        <div class="modal-form__input-wrapper">
-          <input type="email" name="email" id="franchise-email" placeholder=" " required="" />
-          <label for="franchise-email">Email</label>
-        </div>
-        <div>
-          <textarea name="modal-form__textarea" id="francise-comment" placeholder=" "></textarea
-          ><label for="francise-comment">Comment</label>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
+      </div>
     </div>
-  </div>
-</div>
+    <!-- modal francise  -->
+    <div class="backdrop visually-hidden" data-modal="francise">
+      <div class="modal">
+        <div>
+          <button type="button" class="close-button" data-modal-close="buy-now">
+            <svg class="close-button__icon" width="20" height="20">
+              <use href="..\images\icons.svg#icon-clarity_close-line"></use>
+            </svg>
+          </button>
+          <h2 class="modal__title">Thank you for your interest in owning an Ice Cream shop</h2>
+          <p class="modal__franchise-text">
+            Due to the overwhelming volume of franchise requests we are not accepting new franchisee
+            applications at this time. Once the application process resumes, we will contact you for
+            further information. Please fill out the contact information below and we will reach out
+            for additional information. We appreciate your patience.
+          </p>
+          <form class="modal-form" name="modal-form">
+            <div class="modal-form__input-wrapper">
+              <input
+                class="modal-form__input"
+                type="text"
+                pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                name="name"
+                id="francise-name"
+                placeholder="Name"
+                required
+                minlength="2"
+              /><label for="francise-name" class="modal-form__label">Name</label>
+            </div>
+            <div class="modal-form__input-wrapper">
+              <input
+                class="modal-form__input"
+                type="tel"
+                name="tel"
+                id="francise-tel"
+                placeholder="Phone"
+                required
+                minlength="9"
+              /><label for="francise-tel" class="modal-form__label">Phone</label>
+            </div>
+            <div class="modal-form__input-wrapper">
+              <input
+                class="modal-form__input"
+                type="email"
+                name="email"
+                id="franchise-email"
+                placeholder="Email"
+                required=""
+              />
+              <label for="franchise-email" class="modal-form__label">Email</label>
+            </div>
+            <div class="modal-form__input-wrapper modal-form__input-wrapper--textarea">
+              <textarea
+                class="modal-form__input modal-form__input--textarea"
+                name="modal-form__textarea"
+                id="francise-comment"
+                placeholder="Comment"
+              ></textarea
+              ><label for="francise-comment" class="modal-form__label">Comment</label>
+            </div>
+            <button class="btn btn--primary" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
