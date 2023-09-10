@@ -1,12 +1,11 @@
-/*              CONTACTS         */
-
-
+/* CONTACTS */
 .contact {
-    padding-bottom: 60px;}
+    padding-bottom: 60px;
+}
 
 .contacts-list {
-    gap: 20px;
     display: grid;
+    gap: 20px;
     justify-content: center;
 }
 
@@ -19,22 +18,23 @@
 }
 
 .contacts-place-type {
-    text-align: center;
-    font-size: 12px;
-    letter-spacing: 0.48px;
     min-width: 80px;
     background-color: var(--yellow);
     border-radius: 4px;
     margin-bottom: 20px;
     padding: 4px 20.5px;
     display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0.48px;
 }
 
 .contacts-city {
     font-size: 12px;
     letter-spacing: 0.48px;
     border-bottom: 1px solid hsla(0, 0%, 88%, 1);
-    padding-bottom: 24px;}
+    padding-bottom: 24px;
+}
 
 .contacts-adress {
     color: hsla(22, 56%, 63%, 1);
@@ -48,7 +48,6 @@
     display: grid;
     gap: 8px;
     border-bottom: 1px solid hsla(0, 0%, 88%, 1);
-
 }
 
 .contacts-workhours-opentime {
@@ -84,7 +83,7 @@
 }
 
 .contacts-email {
-        color: var(--not-so-black);
+    color: var(--not-so-black);
 }
 
 .contacts-buttons-list {
@@ -94,9 +93,8 @@
     gap: 16px;
     display: flex;
 }
-/*
-.contacts-buttons-locations {}
-*/
+
+/* .contacts-buttons-locations {} */
 .contacts-button-location-wrapper {
     background-color: var(--yellow);
     min-width: 196px;
@@ -113,20 +111,19 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 1.29;
-    
 }
+
 .contacts-button-location-wrapper:hover {
     background-color: #0a8817;
 }
+
 .contacts-button-location-wrapper:focus {
     background-color: #0a8817;
     color: var(--white);
     fill: var(--white);
 }
-/*
-.contacts-button-franchise {}
-*/
 
+/* .contacts-button-franchise {} */
 .contacts-button-franchise-wrapper {
     background-color: transparent;
     min-width: 196px;
@@ -134,7 +131,7 @@
     align-items: center;
     gap: 4px;
     display: flex;
-    transition: fill .25s cubic-bezier(.4, 0, .2, 1), color .25s cubic-bezier(.4, 0, .2, 1), border-color .25s cubic-bezier(.4, 0, .2, 1); 
+    transition: fill .25s cubic-bezier(.4, 0, .2, 1), color .25s cubic-bezier(.4, 0, .2, 1), border-color .25s cubic-bezier(.4, 0, .2, 1);
     cursor: pointer;
     border-color: var(--yellow);
     border: 2px solid var(--yellow);
@@ -145,9 +142,11 @@
     font-weight: 600;
     line-height: 1.29;
 }
+
 .contacts-button-franchise-wrapper:hover {
     border-color: #0a8817;
 }
+
 .contacts-button-franchise-wrapper:focus {
     border-color: #0a8817;
     color: var(--white);
