@@ -1,31 +1,223 @@
+
+:root {
+    --black: hsla(0, 0%, 0%, 1);
+    --not-so-black: hsla(0, 0%, 7%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --grey: hsla(0, 0%, 67%, 1);
+    --yellow: hsla(47, 92%, 64%, 1);
+    --pastel: hsla(102, 18%, 55%, 1);
+    --form-border: hsla(102, 18%, 55%, 1);
+    --form-bg: hsla(47, 92%, 64%, 0.1);
+}
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
+
+/* Reset  */
+html,
+div,
+span,
+object,
+iframe,
+p,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+i,
+center,
+dl,
+dt,
+dd,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+ul,
+ol,
+menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    overflow: hidden;
+}
+
+/* Fonty
+ font-family: 'DM Sans', sans-serif;
+ font-family: '', sans-serif;
+ font-family: 'Seymour One', sans-serif; */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: hsla(0, 0%, 7%, 1);
+    text-decoration: none;
+    background-color: var(--pastel);
+    font-size: 16px;
+}
+
 /*              CONTACTS         */
 
 
-.contact {}
+.contact {position: relative;}
 
-.contacts-list {}
+.contacts-list {flex-direction: column;
+    gap: 20px;
+    display: flex;
+    position: absolute;
+    top: -346px;
+    left: 50%;
+    transform: translate(-50%);
+}
 
-.contacts-main-item {}
+.contacts-main-item {width: 280px;
+    background-color: #fcfcfc;
+    border-radius: 24px;
+    padding: 38px 32px 40px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.86;
+    box-shadow: 0 8px 30px rgba(212, 20, 67, .1);}
 
-.contacts-place-type {}
+.contacts-place-type {min-width: 80px;
+    text-align: center;
+    background-color: #f8d24e;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 0 20.5px;
+    line-height: 1.33;
+    display: inline-block;
+}
 
-.contacts-city {}
+.contacts-city {border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 22px;
+    padding-bottom: 16px;}
 
-.contacts-adress {}
+.contacts-adress {color: #d6936d;
+    margin-top: 8px;
+    line-height: 1.83;
+    display: block;}
 
-.contacts-workhours {}
+.contacts-workhours {letter-spacing: normal;
+    margin-bottom: 8px px;
+}
 
-.contacts-workhours-wrapper {}
+.contacts-workhours-wrapper {color: #ababab;
+    letter-spacing: normal;
+    display: block;}
 
-.contacts-tel {}
+.contacts-tel {letter-spacing: normal;
+    line-height: 1.5;
+    display: block;}
 
-.contacts-email {}
+.contacts-email {letter-spacing: normal;
+    line-height: 1.5;
+    display: block;}
 
-.contacts-buttons {}
+.contacts-buttons {flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    display: flex;}
 
 .contacts-buttons-locations {}
 
-.contacts-button-location-wrapper {}
+.contacts-button-location-wrapper {min-width: 196px;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    display: flex;
+}
 
 .contacts-button-franchise {}
 
