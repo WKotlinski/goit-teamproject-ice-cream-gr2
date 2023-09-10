@@ -132,7 +132,7 @@ body {
 }
 
 .container {
-  width: 480px;
+  width: 320px;
   margin: 0 auto;
   padding: 0 20px;
   outline: var(--outline-1);
