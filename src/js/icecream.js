@@ -1,4 +1,3 @@
-import '../css/main.css';
 (() => {
   const refs = {
     openModalBtn: document.querySelector("[data-modal-open='4']"),
