@@ -1,0 +1,246 @@
+:root {
+  --black: hsla(0, 0%, 0%, 1);
+  --not-so-black: hsla(0, 0%, 7%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+  --not-so-white: hsla(0, 0%, 99%, 1);
+  --white-text: hsla(0, 0%, 99%, 1);
+  --grey: hsla(0, 0%, 67%, 1);
+  --yellow: hsla(47, 92%, 64%, 1);
+  --yellow-form-bg: hsla(47, 92%, 64%, 0.1);
+  --pastel: hsla(102, 18%, 55%, 1);
+  --form-border: hsla(126, 86%, 29%, 1);
+  --form-bg: hsla(47, 92%, 64%, 0.1);
+  --btn-hover: hsla(126, 86%, 29%, 1);
+  --iceream-theme: hsla(103, 27%, 65%, 1);
+  --milkshake-theme: hsla(22, 56%, 63%, 1);
+
+  --outline-1: red 2px dashed;
+  --outline-2: green 2px dashed;
+}
+
+/* Reset  */
+html,
+div,
+span,
+object,
+iframe,
+p,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+i,
+center,
+dl,
+dt,
+dd,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ul,
+ol,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+/* Fonty
+ font-family: 'DM Sans', sans-serif;
+ font-family: '', sans-serif;
+ font-family: 'Seymour One', sans-serif; */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: hsla(0, 0%, 7%, 1);
+  text-decoration: none;
+  background-color: var(--pastel);
+  font-size: 16px;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  outline: var(--outline-1);
+}
+
+.nav-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav__list {
+  display: none;
+}
+.buy__button {
+  display: none;
+}
+.plate-section {
+  display: none;
+}
+.hero-section {
+  background-image: url('/src/images/kropki.png');
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: auto;
+  padding: 0;
+}
+.hero__section-main-title {
+  color: #fcfcfc;
+  font-family: Seymour One;
+  font-size: 26px;
+  letter-spacing: 1.04px;
+  text-transform: uppercase;
+  width: 247px;
+  height: 97px;
+  margin-block-start: 50px;
+  margin-block-end: 32px;
+}
+
+.hero_link-button {
+  text-decoration: none;
+  color: hsla(0, 0%, 0%, 1);
+  text-align: center;
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 108px;
+  height: 38px;
+  padding: 11px 26px;
+  border: 2px var(--yellow) solid;
+  border-radius: 8px;
+}
+
+.hero_link-link {
+  color: var(--yellow);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-inline-start: 12px;
+}
+.hero-par {
+  display: none;
+}
+.hero__list {
+  display: none;
+}
+
+.hero-img {
+  width: 177px;
+  height: 217px;
+  margin: 19px auto;
+}
+@media (min-width: 480px) {
+  .container {
+    width: 428px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1158px;
+  }
+}
