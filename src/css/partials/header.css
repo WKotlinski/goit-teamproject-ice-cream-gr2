@@ -1,0 +1,85 @@
+.nav-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav__list {
+  display: none;
+}
+.buy__button {
+  display: none;
+}
+.plate-section {
+  display: none;
+}
+.hero-section {
+  background-image: url('/src/images/kropki.png');
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: auto;
+}
+.hero__section-main-title {
+  color: #fcfcfc;
+  font-family: Seymour One;
+  font-size: 26px;
+  letter-spacing: 1.04px;
+  text-transform: uppercase;
+  width: 247px;
+  height: 97px;
+  margin-block-start: 50px;
+  margin-block-end: 32px;
+}
+
+.hero_link-button {
+  text-decoration: none;
+  color: hsla(0, 0%, 0%, 1);
+  text-align: center;
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 108px;
+  height: 38px;
+  padding: 11px 26px;
+  border: 2px var(--yellow) solid;
+  border-radius: 8px;
+}
+
+.hero_link-link {
+  color: var(--yellow);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-inline-start: 12px;
+}
+.hero-par {
+  display: none;
+}
+.hero__list {
+  display: none;
+}
+
+.hero-img {
+  width: 177px;
+  height: 217px;
+  margin: 19px auto;
+}
+@media (min-width: 480px) {
+  .container {
+    width: 428px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1158px;
+  }
+}
