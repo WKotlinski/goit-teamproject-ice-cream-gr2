@@ -1,31 +1,36 @@
 .about-section {
-  text-align: center;
-  padding: 61px 0;
-  padding-bottom: 50px;
+  padding-top: 60px;
   color: var(--white-text);
-  display: block;
-}
-
-.about-container {
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header-text {
-  margin: 0 auto 32px;
-  max-width: 210px;
-  font-family: Montserrat;
+  padding-bottom: 50px;
 }
 
 .about-paragraph {
+  margin-bottom: 12px;
+  text-align: center;
   font-size: 18px;
+  font-family: Montserrat;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .about-paragraph {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-paragraph {
+    font-size: 30px;
+    letter-spacing: 1.2px;
+  }
+}
+
 .header-about {
+  text-align: center;
   margin-top: 12px;
   font-family: Seymour One;
   font-size: 30px;
@@ -34,6 +39,25 @@
   line-height: normal;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+  max-width: 200px;
+  margin: 0 auto 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-about {
+    max-width: 100%;
+    margin-bottom: 72px;
+    font-size: 34px;
+    letter-spacing: 2.04px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-about {
+    margin-bottom: 84px;
+    font-size: 36px;
+    letter-spacing: 2.16px;
+  }
 }
 
 img {
@@ -42,32 +66,118 @@ img {
   display: block;
 }
 
-.main-about {
-  display: flex;
+.main-content {
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 40px;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .main-content {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-content {
+    justify-content: left;
+    gap: 108px;
+  }
 }
 
 .cow-photo {
-  max-width: 279px;
-  width: 279px;
+  max-width: 335px;
+}
+
+@media screen and (min-width: 768px) {
+  .cow-photo {
+    max-width: calc(50% - 16px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cow-photo {
+    max-width: 490px;
+    width: 490px;
+  }
 }
 
 .photo-2 {
-  border-radius: 140px;
-  margin-top: 54px;
-  box-shadow: 0 -22px #f8d24e;
+  width: 100%;
+  border-radius: 1038.58px;
+  margin-top: 21.82px;
+  box-shadow: 0 -21.82px #EFD478;;
 }
 
-.descrition {
-  margin: 0 auto;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  max-width: 220px;
+@media screen and (min-width: 768px) {
+  .photo-2 {
+    margin-top: 25.88px;
+    box-shadow: 0 -26px #EFD478;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .photo-2 {
+    margin-top: 39px;
+    box-shadow: 0 -39px #EFD478;
+  }
+}
+
+.right-section {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+}
+
+@media screen and (min-width: 480px) {
+  .right-section {
+    max-width: 220px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .right-section {
+    max-width: 334px;
+    text-align: left;
+    align-items: baseline;
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .right-section {
+    gap: 50px;
+    max-width: 463px;
+  }
+}
+
+.description {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .description {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .description:last-child {
+letter-spacing: 0.48px;
+  }
 }
 
 .descrition-text {
   color: #fcfcfc;
-  text-align: center;
   font-family: Montserrat;
   font-size: 12px;
   font-style: normal;
@@ -76,10 +186,37 @@ img {
   margin-bottom: 4px;
 }
 
+@media screen and (min-width: 768px) {
+  .descrition-text {
+line-height: 176%;
+letter-spacing: 0.48px;
+  margin-bottom: 8px;
+  }
+}
+
 .descrition-text:first-child {
   letter-spacing: 0.48px;
   line-height: 176%;
 }
+
+@media screen and (min-width: 1200px) {
+  .descrition-text {
+font-size: 14px;
+line-height: 194%;
+letter-spacing: 0.56px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .descrition-text:first-child {
+font-size: 16px;
+line-height: 176%;
+letter-spacing: 0.64px;
+margin-bottom: 8px;
+  }
+}
+
+
 
 .about-btn {
   width: 164px;
@@ -90,7 +227,9 @@ img {
   border: none;
   align-items: center;
   display: inline-flex;
+  gap: 4px;
   cursor: pointer;
+
 }
 
 .about-btn-text {
