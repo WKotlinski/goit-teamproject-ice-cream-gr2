@@ -26,11 +26,12 @@
 
 @media (min-width: 1200px) {
   .gallery {
-    margin: 176px auto 0px auto;
+    margin: -40px auto 0px auto;
   }
   .gallery-image {
     width: 1013px;
     height: 422px;
     margin-top: 0px;
+    border-radius: 24px;
   }
 }
