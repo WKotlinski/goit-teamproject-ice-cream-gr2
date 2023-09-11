@@ -90,6 +90,7 @@ img {
   border: none;
   align-items: center;
   display: inline-flex;
+  cursor: pointer;
 }
 
 .about-btn-text {
