@@ -2,7 +2,6 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
-
 @import url('/src/css/partials/variables.css');
 /* Reset  */
 html,
@@ -230,3 +229,14 @@ body {
 }
 
 END OF FOOTER CLASSES                   */
+@import url('/src/css/partials/basic.css');
+@import url('/src/css/partials/header.css');
+@import url('/src/css/partials/modal.css');
+@import url('/src/css/partials/products.css');
+@import url('/src/css/partials/about.css');
+@import url('/src/css/partials/menu.css');
+@import url('/src/css/partials/gallery.css');
+@import url('/src/css/partials/adventages.css');
+@import url('/src/css/partials/customer-reviews.css');
+@import url('/src/css/partials/contacts.css');
+@import url('/src/css/partials/footer.css');

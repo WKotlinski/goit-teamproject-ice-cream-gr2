@@ -1,0 +1,264 @@
+.products {
+  background-image: url('../../images/Ice-cream-bg-mobile1x.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  padding: 61px 20px 60px;
+}
+.products-pre-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.products-title {
+  text-align: center;
+  font-family: Seymour One, sans-serif;
+  font-size: 30px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 148px;
+}
+.products-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 164px;
+}
+.products-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 420px;
+  border-radius: 24px;
+  padding: 123px 40px 16px;
+}
+.products-item-green {
+  background-color: hsla(104, 22%, 71%, 1);
+}
+.products-item-green:before {
+  content: '';
+  width: 200px;
+  height: 200px;
+  background-color: hsla(0, 0%, 85%, 1);
+  background-image: linear-gradient(
+    0deg,
+    rgba(156, 190, 143, 0.7) 0%,
+    rgba(156, 190, 143, 0.7) 100%
+  );
+  filter: drop-shadow(0px 5.342px 20.0332px rgba(10, 136, 23, 0.25));
+  border-radius: 50%;
+  position: absolute;
+  top: -97px;
+}
+
+.products-item-green:after {
+  content: '';
+  width: 200px;
+  height: 200px;
+  background-image: url('/src/images/ice-cream-mobile1x.jpg');
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: -108px;
+}
+.products-item-yellow {
+  background-color: hsla(46, 79%, 70%, 1);
+}
+.products-item-yellow:before {
+  content: '';
+  width: 200px;
+  height: 200px;
+  background-color: hsla(0, 0%, 85%, 1);
+  background-image: linear-gradient(0deg, rgba(248, 210, 78, 0.7) 0%, rgba(248, 210, 78, 0.7) 100%);
+  filter: drop-shadow(0px 5.403px 20.264px rgba(153, 114, 23, 0.25));
+  border-radius: 50%;
+  position: absolute;
+  top: -97px;
+}
+.products-item-yellow:after {
+  content: '';
+  width: 200px;
+  height: 200px;
+  background-image: url('/src/images/ice-coffee-mobile1x.jpg');
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: -108px;
+}
+.products-item-brown {
+  background-color: hsla(22, 56%, 63%, 1);
+}
+.products-item-brown:before {
+  content: '';
+  width: 200px;
+  height: 200px;
+  background-color: hsla(0, 0%, 85%, 1);
+  background-image: linear-gradient(0deg, rgba(213, 117, 63, 0.7) 0%, rgba(213, 117, 63, 0.7) 100%);
+  filter: drop-shadow(0px 5.413px 20.299px rgba(0, 0, 0, 0.25));
+  border-radius: 50%;
+  position: absolute;
+  top: -97px;
+}
+.products-item-brown:after {
+  content: '';
+  width: 200px;
+  height: 200px;
+  background-image: url('../../images/milkshakes-mobile1x.jpg');
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: -108px;
+}
+.products-headings {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.products-paragraph {
+  text-align: center;
+  font-size: 14px;
+  line-height: 176%;
+  letter-spacing: 0.56px;
+}
+.products-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  position: absolute;
+  bottom: 16px;
+  cursor: pointer;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  transform-origin: left center;
+}
+.products-btn:focus {
+  transform: scale(120%);
+  outline: none;
+}
+.products-btn:hover {
+  transform: scale(120%);
+}
+@media screen and (min-width: 768px) {
+  .products {
+    background-image: url('../../images/Ice-cream-bg-tablet1x.jpg');
+  }
+  .products-pre-title {
+    font-size: 22px;
+  }
+  .products-title {
+    font-size: 34px;
+    letter-spacing: 1.36px;
+    margin-bottom: 200px;
+  }
+  .products-list {
+    flex-direction: row;
+    gap: 16px;
+  }
+  .products-item {
+    width: calc((100% - 32px) / 3);
+    max-width: 224px;
+    min-height: 428px;
+    padding: 108px 26px 12px;
+  }
+  .products-headings {
+    font-size: 22px;
+    letter-spacing: 0.88px;
+  }
+  .products-item-green:before,
+  .products-item-yellow:before,
+  .products-item-brown:before {
+    top: -108px;
+  }
+  .products-item-green:after,
+  .products-item-yellow:after,
+  .products-item-brown:after {
+    top: -120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products {
+    background-image: url('../../images/Ice-cream-bg-desk1x.jpg');
+  }
+  .products-pre-title {
+    font-size: 30px;
+    letter-spacing: 1.2px;
+  }
+  .products-title {
+    font-size: 36px;
+    letter-spacing: 2.16px;
+    margin-bottom: 303px;
+  }
+  .products-list {
+    gap: 29px;
+  }
+  .products-item {
+    width: calc((100% - 58px) / 3);
+    max-width: 370px;
+    min-height: 536px;
+    padding: 165px 64px 64px 60px;
+  }
+  .products-headings {
+    font-size: 30px;
+    letter-spacing: 1.2px;
+    margin-bottom: 66px;
+  }
+  .products-paragraph {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+  }
+  .products-item-green:before,
+  .products-item-yellow:before,
+  .products-item-brown:before {
+    top: -167px;
+    width: 300px;
+    height: 300px;
+    filter: drop-shadow(0px 8px 30px rgba(153, 114, 23, 0.25));
+  }
+  .products-item-green:after,
+  .products-item-yellow:after,
+  .products-item-brown:after {
+    top: -183px;
+    width: 302px;
+    height: 302px;
+  }
+  .products-item-green:after {
+    background-image: url('../../images/ice-cream-desk1x.jpg');
+  }
+  .products-item-yellow:after {
+    background-image: url('../../images/ice-coffee-desk1x.jpg');
+  }
+  .products-item-brown:after {
+    background-image: url('../../images/milkshakes-desk1x.jpg');
+  }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .products {
+    background-image: url('../../images/Ice-cream-bg-mobile2x.jpg'),
+      url('../../images/Ice-cream-bg-tablet2x.jpg'), url('../../images/Ice-cream-bg-desk2x.jpg');
+  }
+  .products-item-green:after {
+    background-image: url('../../images/ice-cream-mobile2x.jpg'),
+      url('../../images/ice-cream-desk2x.jpg');
+  }
+  .products-item-yellow:after {
+    background-image: url('../../images/ice-coffee-mobile2x.jpg'),
+      url('../../images/ice-coffee-desk2x.jpg');
+  }
+  .products-item-brown:after {
+    background-image: url('../../images/milkshakes-mobile2x.jpg'),
+      url('../../images/milkshakes-desk2x.jpg');
+  }
+}

@@ -1,0 +1,111 @@
+.about-section {
+  text-align: center;
+  padding: 61px 0;
+  padding-bottom: 50px;
+  color: var(--white-text);
+  display: block;
+}
+
+.about-container {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header-text {
+  margin: 0 auto 32px;
+  max-width: 210px;
+  font-family: Montserrat;
+}
+
+.about-paragraph {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.header-about {
+  margin-top: 12px;
+  font-family: Seymour One;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main-about {
+  display: flex;
+  justify-content: center;
+}
+
+.cow-photo {
+  max-width: 279px;
+  width: 279px;
+}
+
+.photo-2 {
+  border-radius: 140px;
+  margin-top: 54px;
+  box-shadow: 0 -22px #f8d24e;
+}
+
+.descrition {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  max-width: 220px;
+}
+
+.descrition-text {
+  color: #fcfcfc;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 162%;
+  margin-bottom: 4px;
+}
+
+.descrition-text:first-child {
+  letter-spacing: 0.48px;
+  line-height: 176%;
+}
+
+.about-btn {
+  width: 164px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #f8d24e;
+  border: none;
+  align-items: center;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.about-btn-text {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.about-btn-svg {
+  fill: black;
+}
