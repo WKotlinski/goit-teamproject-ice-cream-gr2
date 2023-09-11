@@ -1,23 +1,86 @@
-.nav-section {
+.header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+  padding: 12px 0;
 }
-.nav__list {
-  display: none;
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 20px 0;
+  }
 }
-.buy__button {
-  display: none;
+
+@media screen and (max-width: 1199px) {
+  .nav-section {
+    display: none;
+  }
 }
-.plate-section {
-  display: none;
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-left: auto;
 }
+
+@media screen and (max-width: 767px) {
+  .buy__button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .buy__button {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 36px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--yellow);
+  }
+}
+
+.buy__button:hover {
+  background-color: var(--form-border);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buy__button:focus {
+  background-color: var(--form-border);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--white);
+  fill: var(--white);
+}
+
+.buy__button:disabled {
+  background-color: var(--grey);
+}
+
 .hero-section {
   background-image: url('/src/images/kropki.png');
   background-repeat: no-repeat;
   background-position: 50% 100%;
   background-size: auto;
 }
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    position: relative;
+    background: url(../../images/kropki-l-tab.png) 0 100%/110px 34px no-repeat,
+      url(../../images/kropki-r-tab.png) 100% 100%/182px 67px no-repeat;
+    display: flex;
+  }
+}
+
 .hero__section-main-title {
   color: #fcfcfc;
   font-family: Seymour One;
@@ -28,6 +91,12 @@
   height: 97px;
   margin-block-start: 50px;
   margin-block-end: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .passion {
+    font-size: 34px;
+  }
 }
 
 .hero_link-button {
@@ -54,18 +123,120 @@
   text-decoration: underline;
   margin-inline-start: 12px;
 }
-.hero-par {
-  display: none;
+
+@media screen and (min-width: 768px) {
+  .hero-buttons {
+    margin-bottom: 28px;
+  }
 }
-.hero__list {
-  display: none;
+
+@media screen and (max-width: 767px) {
+  .plate-section {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .plate-section {
+    display: flex;
+    gap: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .plate {
+    animation: rotation 20s linear infinite;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate (0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-par {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-par {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4;
+    max-width: 165px;
+    color: var(--white);
+    margin-bottom: 29px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-arrow {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-arrow {
+    fill: var(--white);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero__list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__list {
+    position: absolute;
+    top: 94px;
+    right: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__list-item {
+    text-align: right;
+    font-size: 8px;
+    color: var(--white);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__list-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .number {
+    text-align: right;
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 4px;
+    display: block;
+    color: var(--black);
+  }
 }
 
 .hero-img {
-  width: 177px;
-  height: 217px;
   margin: 19px auto;
 }
+
+@media screen and (min-width: 768px) {
+  .hero-img {
+    margin-bottom: 0;
+    margin-top: 65px;
+  }
+}
+
 @media (min-width: 480px) {
   .container {
     width: 428px;
@@ -81,5 +252,12 @@
 @media (min-width: 1200px) {
   .container {
     width: 1158px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-left-side {
+    margin-left: 20px;
+    margin-bottom: 15px;
   }
 }

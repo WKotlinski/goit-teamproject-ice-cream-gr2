@@ -1,60 +1,102 @@
 <div class="container">
-  <nav class="nav-section">
-    <img
-      srcset="
-        ./images/logo-mob@1x.png 40w,
-        ./images/logo-mob@2x.png 80w,
-        ./images/logo-tab@1x.png 48w,
-        ./images/logo-tab@2x.png 96w
-      "
-      sizes="(min-width:768px) 48px, 40px"
-      src="./images/logo.png"
-      alt="logo"
-    />
-    <ul class="nav__list">
-      <li><a href="#id">Home</a></li>
-      <li><a href="#id">How it's made?</a></li>
-      <li><a href="#id">Our products</a></li>
-      <li><a href="#id">Contact</a></li>
-    </ul>
-    <button class="nav__button buy__button" type="button">Buy now ></button>
-    <button
-  type="button"
-  class="btn-hamburger js-open-menu"
-  aria-expanded="false"
-  aria-controls="mobile-menu"
->
-  <svg class="hamburger" width="32" height="32">
-    <use href="./images/icons-menu.svg#icon-charm_menu-hamburger"></use>
-  </svg>
-</button>
-  </nav>
+  <div class="header">
+    <a class="logo">
+      <img
+        srcset="
+          ./images/logo-mob@1x.png      40w,
+          ./images/logo-mob@2x.png      80w,
+          ./images/logo-tab@1x.png      48w,
+          ./images/logo-tab@2x.png      96w,
+          ./images/logo-desktop@1x.png  60w,
+          ./images/logo-desktop@2x.png 120w
+        "
+        sizes="(min-width:1200px) 60px, (min-width:768px) 48px, 40px"
+        src="./images/logo.png"
+        alt="logo"
+    /></a>
+    <nav class="nav-section">
+      <ul class="nav__list">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">How it's made?</a></li>
+        <li><a href="#products">Our products</a></li>
+        <li><a href="#contacts">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-buttons">
+      <button
+        type="button"
+        class="btn-hamburger js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="hamburger" width="32" height="32">
+          <use href="./images/icons-menu.svg#icon-charm_menu-hamburger"></use>
+        </svg>
+      </button>
+      <button class="nav__button buy__button" type="button">
+        Buy now
+        <svg width="12" height="12">
+          <use href="./images/icons-menu.svg#icon-ep_arrow-right-bold"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </div>
-<section class="hero-section">
-
-  <div class="container">
+<section id="header">
+  <div class="container hero-section">
     <div class="hero-left-side">
-      <h1 class="hero__section-main-title">Ice Cream made with passion</h1>
-      <a class="hero_link-button" href="#">Products</a
-      ><a class="hero_link-link" href="#">How it's made?</a>
+      <h1 class="hero__section-main-title">
+        Ice Cream made with <span class="passion">passion</span>
+      </h1>
+      <div class="hero-buttons">
+        <a class="hero_link-button" href="#">Products</a
+        ><a class="hero_link-link" href="#">How it's made?</a>
+      </div>
       <div class="plate-section">
-        <img src="#" alt="plate with icecream on it" />
-        <p class="hero-par">
-          Indulge in a scoop of ice cream made with passion and treat your taste buds to an
-          unforgettable experience!
-        </p>
-        <button type="button"><img src="#" alt="#" /></button>
+        <img
+          class="plate"
+          srcset="
+            ./images/alotof-tab@1x.png  152w,
+            ./images/alotof-tab@2x.png  304w,
+            ./images/alotof-desk@1x.png 225w,
+            ./images/alotof-desk@2x.png 450w
+          "
+          sizes="(min-width:1200px) 225px, (min-width:768px) 152px, 152px"
+          src="./images/alotof-tab@1x.png"
+          alt="plate with icecream on it"
+        />
+        <div class="hero-text">
+          <p class="hero-par">
+            Indulge in a scoop of ice cream made with passion and treat your taste buds to an
+            unforgettable experience!
+          </p>
+          <a class="hero-arrow">
+            <svg width="40" height="16">
+              <use href="./images/icons-menu.svg#icon-Arrow"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
-    <div class="hero-right-side"></div>
-    <img
-      class="hero-img"
-      src="/src/images/ice-cream-hero1x.png"
-      alt="Ice cream with 1 orange, 1 pink and 1 green ball on a top, all balls have cartoons eyes and smile"
-    />
-    <ul class="hero__list">
-      <li><span>16</span>cafes</li>
-      <li><span>23</span>food trucks</li>
-    </ul>
+    <div class="hero-right-side">
+      <img
+        class="hero-img"
+        srcset="
+          ./images/ice-cream-mob@1x.png       218w,
+          ./images/ice-cream-mob@2x.png       436w,
+          ./images/ice-cream-hero-tab@1x.png  268w,
+          ./images/ice-cream-hero-tab@2x.png  536w,
+          ./images/ice-cream-hero-desk@1x.png 456w,
+          ./images/ice-cream-hero-desk@2x.png 912w
+        "
+        sizes="(min-width:1200px) 456px, (min-width:768px) 268px, 218px"
+        src="./images/ice-cream-mob@1x.png"
+        alt="Ice cream with 1 orange, 1 pink and 1 green ball on a top, all balls have cartoons eyes and smile"
+      />
+      <ul class="hero__list">
+        <li class="hero__list-item"><span class="number">16</span>cafes</li>
+        <li class="hero__list-item"><span class="number">23</span>food trucks</li>
+      </ul>
+    </div>
   </div>
 </section>
