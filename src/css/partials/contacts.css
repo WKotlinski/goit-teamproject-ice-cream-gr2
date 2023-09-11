@@ -163,7 +163,9 @@
         line-height: 1.4;
         letter-spacing: 0.64px;
         border-radius: 6px;
-        margin-bottom: 36px;
+
+          margin-bottom: 36px;
+
     }
     .contacts-list .contacts-main-item:nth-child(1) .contacts-place-type {
         padding: 4px 13px;
@@ -192,4 +194,42 @@
         padding-top: 32px;
         gap: 4px;    
     }
+
 }
+
+@media (min-width: 1200px) {
+.contact {
+        margin: 100px 0 120px 0;
+    }
+    .contacts-buttons-list {
+        margin-top: 60px;
+    }
+    .contacts-main-item {
+        width: 368px;
+        padding: 40px;
+    }
+    .contacts-place-type {
+        min-width: 76px;
+    }
+    .contacts-city {
+        font-size: 16px;
+        letter-spacing: 0.64px;
+    }
+    .contacts-adress {
+        margin-top: 8px;
+    }
+    .contacts-adress:hover {
+        text-decoration:underline;
+    }
+    .contacts-workhours-opentime {
+        font-size: 16px;
+    }
+
+    .contacts-details {
+        font-size: 16px;
+        line-height: 1.5;
+        padding-top: 32px;
+        gap: 4px;
+    }
+}
+
