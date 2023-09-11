@@ -69,3 +69,42 @@
   cursor: pointer;
 }
 
+/*--------------MEDIA QUERIES---------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-big-text {
+    font-size: 26px;
+    width: 352px;
+    letter-spacing: 1.04;
+    margin: 0;
+  }
+  .footer-big-text > span {
+    font-size: 48px;
+  }
+  .ft-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  .footer-contact-phone {
+    margin-bottom: 0;
+    position: relative;
+    top: 34px;
+    margin-right: 0;
+    font-size: 14px;
+  }
+  .footer-socials-svg {
+    margin-bottom: 0;
+    margin-right: 0;
+    gap: 30px;
+  }
+  .site-copyrights {
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  hr {
+    margin: 0;
+  }
+}
