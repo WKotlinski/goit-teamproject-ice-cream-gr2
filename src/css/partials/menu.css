@@ -7,6 +7,7 @@
   height: 100%;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 9999;
 }
 
 @media screen and (min-width: 1200px) {
@@ -120,6 +121,19 @@
 
 @media screen and (min-width: 768px) {
   .menu-mob__buy {
+    display: none;
+  }
+}
+
+.btn-hamburger {
+  border: none;
+  stroke: var(--white);
+  stroke-width: 3;
+  background-color: var(--pastel);
+}
+
+@media screen and (min-width: 1200px) {
+  .btn-hamburger {
     display: none;
   }
 }

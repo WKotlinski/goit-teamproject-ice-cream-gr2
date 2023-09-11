@@ -1,0 +1,37 @@
+.gallery {
+  margin: -40px auto 0px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.gallery-image {
+  margin: 0 auto;
+  width: 280px;
+  height: 130px;
+  border-radius: 8px;
+}
+
+@media (min-width: 480px) {
+  .gallery-image {
+    width: 440px;
+    height: 204px;
+  }
+}
+@media (min-width: 768px) {
+  .gallery-image {
+    width: 704px;
+    height: 327px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery {
+    margin: -40px auto 0px auto;
+  }
+  .gallery-image {
+    width: 1013px;
+    height: 422px;
+    margin-top: 0px;
+    border-radius: 24px;
+  }
+}

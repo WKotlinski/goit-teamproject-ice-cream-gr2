@@ -228,6 +228,8 @@ margin-bottom: 8px;
   align-items: center;
   display: inline-flex;
   gap: 4px;
+  cursor: pointer;
+
 }
 
 .about-btn-text {
