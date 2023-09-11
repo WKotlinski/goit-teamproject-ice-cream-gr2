@@ -1,6 +1,5 @@
-<!-- Kod napisany przez Ariela, sprawdzony i poprawiony przez WKotlinski -->
 <div class="container">
-  <nav>
+  <nav class="nav-section">
     <img
       srcset="
         ./images/logo-mob@1x.png 40w,
@@ -12,16 +11,14 @@
       src="./images/logo.png"
       alt="logo"
     />
-    <ul class="header-menu">
+    <ul class="nav__list">
       <li><a href="#id">Home</a></li>
       <li><a href="#id">How it's made?</a></li>
       <li><a href="#id">Our products</a></li>
       <li><a href="#id">Contact</a></li>
     </ul>
-  </nav>
-  <button type="button" class="header-button">Buy now</button>
-</div>
-<button
+    <button class="nav__button buy__button" type="button">Buy now ></button>
+    <button
   type="button"
   class="btn-hamburger js-open-menu"
   aria-expanded="false"
@@ -31,33 +28,33 @@
     <use href="./images/icons-menu.svg#icon-charm_menu-hamburger"></use>
   </svg>
 </button>
-<section class="hero">
+  </nav>
+</div>
+<section class="hero-section">
+
   <div class="container">
-    <h1>Ice Cream made with passion</h1>
-    <div class="hero-buttons">
-      <a href="#"> Products</a>
-      <a href="#"> How it's made</a>
+    <div class="hero-left-side">
+      <h1 class="hero__section-main-title">Ice Cream made with passion</h1>
+      <a class="hero_link-button" href="#">Products</a
+      ><a class="hero_link-link" href="#">How it's made?</a>
+      <div class="plate-section">
+        <img src="#" alt="plate with icecream on it" />
+        <p class="hero-par">
+          Indulge in a scoop of ice cream made with passion and treat your taste buds to an
+          unforgettable experience!
+        </p>
+        <button type="button"><img src="#" alt="#" /></button>
+      </div>
     </div>
-    <div class="hero-plate-content">
-      <img src="#" class="rotate-plate" alt="#" />
-    </div>
-    <div class="hero-entry">
-      <p>
-        Indulge in a scoop of ice cream made with passion and treat your taste buds to an
-        unforgettable experience!
-      </p>
-      <a class="hero-entry-link" href="#products">
-        <svg class="hero-arrow"></svg>
-      </a>
-    </div>
-    <div class="hero-stats">
-      <p class="hero-stats-element">
-        <span class="hero-stats-element">16</span>cafes
-        <span class="hero-stats-element">23</span>food trucks
-      </p>
-    </div>
-    <div class="her-stats-ice">
-      <img src="#" class="hero-stats-ice-svg" alt="#" />
-    </div>
+    <div class="hero-right-side"></div>
+    <img
+      class="hero-img"
+      src="/src/images/ice-cream-hero1x.png"
+      alt="Ice cream with 1 orange, 1 pink and 1 green ball on a top, all balls have cartoons eyes and smile"
+    />
+    <ul class="hero__list">
+      <li><span>16</span>cafes</li>
+      <li><span>23</span>food trucks</li>
+    </ul>
   </div>
 </section>
