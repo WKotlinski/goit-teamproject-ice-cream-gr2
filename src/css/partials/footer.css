@@ -52,13 +52,12 @@
 .site-copyrights {
   width: 280px;
   color: #7a7a7a;
-  text-align: center;
+
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 152%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px auto;
 }
 .ft-icon-background {
   display: flex;
@@ -108,3 +107,4 @@
     margin: 0;
   }
 }
+
