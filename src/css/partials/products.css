@@ -143,11 +143,11 @@
   transform-origin: left center;
 }
 .products-btn:focus {
-  transform: scale(120%);
+  transform: scale(1.2);
   outline: none;
 }
 .products-btn:hover {
-  transform: scale(120%);
+  transform: scale(1.2);
 }
 @media screen and (min-width: 768px) {
   .products {
@@ -159,7 +159,7 @@
   .products-title {
     font-size: 34px;
     letter-spacing: 1.36px;
-    margin-bottom: 200px;
+    margin-block-end: 200px;
   }
   .products-list {
     flex-direction: row;
