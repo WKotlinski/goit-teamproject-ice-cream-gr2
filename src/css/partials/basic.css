@@ -103,6 +103,7 @@ img {
 
 html {
   overflow: auto;
+  overflow-y: scroll;
   box-sizing: border-box;
 }
 
@@ -135,6 +136,7 @@ body {
   width: 320px;
   margin: 0 auto;
   padding: 0 20px;
+  /* outline: var(--outline-1); */
 }
 
 @media (min-width: 480px) {
