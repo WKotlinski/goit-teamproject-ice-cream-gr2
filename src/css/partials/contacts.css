@@ -1,12 +1,16 @@
 /* CONTACTS */
 .contact {
-  margin: 56px 0 60px 0;
+  position: relative;
 }
 
 .contacts-list {
   display: grid;
-  gap: 20px;
+  gap: 16px;
   justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: -353px;
 }
 
 .contacts-main-item {
@@ -87,11 +91,11 @@
   color: var(--not-so-black);
 }
 .contacts-buttons-list {
-  margin-top: 20px;
   flex-direction: column;
   align-items: center;
   gap: 16px;
   display: flex;
+  padding: 935px 0 60px 0;
 }
 .contacts-button-wrapper {
   min-width: 196px;
@@ -116,7 +120,9 @@
   border: 2px solid rgba(0, 0, 0, 0);
 }
 
-.contacts-buttons-item:nth-child(1) .contacts-button-wrapper:hover,
+.contacts-buttons-item:nth-child(1) .contacts-button-wrapper:hover {
+background-color: #0a8817;
+}
 .contacts-buttons-item:nth-child(1) .contacts-button-wrapper:focus {
   background-color: #0a8817;
   color: var(--white);
@@ -128,37 +134,35 @@
   border-color: var(--yellow);
 }
 
-.contacts-buttons-item:nth-child(2) .contacts-button-wrapper:hover,
+.contacts-buttons-item:nth-child(2) .contacts-button-wrapper:hover {
+  border-color: #0a8817;
+}
 .contacts-buttons-item:nth-child(2) .contacts-button-wrapper:focus {
   border-color: #0a8817;
   color: var(--white);
   fill: var(--white);
 }
-.scnd-btn {
-  background-color: transparent;
-}
-.scnd-btn:hover {
-  border-color: #0a8817;
-}
-.scnd-btn:focus {
-  color: white;
-}
 /*          MEDIA QUERY        */
-
-@media (min-width: 768px) {
-  .contact {
-    margin: 80px 0 40px 0;
+@media (min-width: 480px) {
+  .contacts-list {
+    top: -349px;
   }
+  .contacts-buttons-list {
+    padding-top: 943px;
+  }
+}
+@media (min-width: 768px) {
   .contacts-list {
     display: flex;
     flex-direction: row;
     gap: 16px;
+    top: -299px;
   }
   .contacts-buttons-list {
     flex-direction: row;
     justify-content: center;
     gap: 16px;
-    margin-top: 40px;
+    padding: 278px 0 40px 0;  
   }
   .contacts-main-item {
     width: 224px;
@@ -203,11 +207,12 @@
 }
 
 @media (min-width: 1200px) {
-  .contact {
-    margin: 100px 0 120px 0;
+    .contacts-list {
+      top: -128px;
+      gap: 32px;
   }
   .contacts-buttons-list {
-    margin-top: 60px;
+      padding: 474px 0 120px 0;  
   }
   .contacts-main-item {
     width: 368px;
