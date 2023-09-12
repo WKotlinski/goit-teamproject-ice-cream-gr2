@@ -1,11 +1,11 @@
-.adv-layout {
+.layout {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
   margin-bottom: 28px;
 }
-.adv-layout:last-child {
+.layout:last-child {
   margin-bottom: 0;
 }
 .icon-background {
@@ -19,7 +19,7 @@
   align-items: center;
   border-radius: 50%;
 }
-.adv-first-paragraph {
+.first-paragraph {
   color: var(--white);
   font-size: 36px;
   font-style: normal;
@@ -28,7 +28,7 @@
   letter-spacing: 1.44px;
   text-transform: uppercase;
 }
-.adv-sec-paragraph {
+.sec-paragraph {
   color: var(--white);
   font-size: 12px;
   font-style: normal;
@@ -41,45 +41,45 @@
 /*------------------MEDIA QUERIES---------------------*/
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .adv-container {
+  .section-container {
     display: flex;
     justify-content: center;
     flex-direction: row;
     gap: 80px;
   }
-  .adv-sec-paragraph {
+  .sec-paragraph {
     font-size: 14px;
     line-height: 174%;
     max-width: 152px;
   }
-  .adv-first-paragraph {
+  .first-paragraph {
     font-size: 48px;
     margin-top: 32px;
     margin-bottom: 12px;
   }
-  .adv-layout {
+  .layout {
     gap: 0;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .adv-container {
+  .section-container {
     display: flex;
     justify-content: center;
     flex-direction: row;
     gap: 32px;
   }
-  .adv-sec-paragraph {
+  .sec-paragraph {
     font-size: 16px;
     line-height: 176%;
     width: 368px;
     letter-spacing: 0.32px;
   }
-  .adv-first-paragraph {
+  .first-paragraph {
     font-size: 58px;
     margin-top: 40px;
     margin-bottom: 12px;
   }
-  .adv-layout {
+  .layout {
     gap: 0;
     margin-bottom: 178px;
   }
