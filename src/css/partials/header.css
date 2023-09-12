@@ -3,6 +3,7 @@
   justify-content: space-between;
   width: 100%;
   padding: 12px 0;
+  margin-block-end: -49px;
 }
 
 @media screen and (min-width: 768px) {
@@ -70,6 +71,7 @@
   background-repeat: no-repeat;
   background-position: 50% 100%;
   background-size: auto;
+  margin-block-end: -17px;
 }
 
 @media screen and (min-width: 768px) {
