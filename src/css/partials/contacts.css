@@ -163,7 +163,9 @@
         line-height: 1.4;
         letter-spacing: 0.64px;
         border-radius: 6px;
-        margin-bottom: 32px;
+
+          margin-bottom: 36px;
+
     }
     .contacts-list .contacts-main-item:nth-child(1) .contacts-place-type {
         padding: 4px 13px;
@@ -192,6 +194,7 @@
         padding-top: 32px;
         gap: 4px;    
     }
+
 }
 
 @media (min-width: 1200px) {
@@ -229,5 +232,4 @@
         gap: 4px;
     }
 }
-
 
