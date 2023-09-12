@@ -63,6 +63,72 @@
     </form>
   </div>
 </div>
+<!-- Modal buy now menu -->
+<div class="backdrop is-hidden" data-modal="8">
+  <div class="modal">
+    <button type="button" class="close-button" data-modal-close="8">
+      <svg class="close-button__icon" width="20" height="20">
+        <use href=".\images\icons.svg#icon-clarity_close-line"></use>
+      </svg>
+    </button>
+    <h2 class="modal__title">Buy now</h2>
+    <form class="modal-form" name="modal-form-menu">
+      <div class="modal-checkbox__container">
+        <div class="modal-checkbox modal-checkbox--green">
+          <input type="checkbox" name="buy" value="ice cream" id="check1-menu" /><label for="check1"
+            ><span class="check-span">ice cream</span></label
+          >
+        </div>
+        <div class="modal-checkbox modal-checkbox--yellow">
+          <input type="checkbox" name="buy" value="ice coffee" id="check2-menu" /><label
+            for="check2"
+            ><span class="check-span">ice coffee</span></label
+          >
+        </div>
+        <div class="modal-checkbox modal-checkbox--brown margin">
+          <input type="checkbox" name="buy" value="milkshake" id="check3-menu" /><label for="check3"
+            ><span class="check-span">milkshake</span></label
+          >
+        </div>
+      </div>
+      <div class="buy-now__form-container">
+        <div class="modal-form__input-wrapper">
+          <input
+            class="modal-form__input"
+            type="text"
+            name="name"
+            id="products-name-menu"
+            placeholder="Name"
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            required
+            minlength="2"
+          /><label for="products-name" class="modal-form__label">Name</label>
+        </div>
+        <div class="modal-form__input-wrapper">
+          <input
+            class="modal-form__input"
+            type="tel"
+            name="tel"
+            id="products-tel-menu"
+            placeholder="Phone"
+            required
+            minlength="9"
+          /><label for="products-tel" class="modal-form__label">Phone</label>
+        </div>
+        <div class="modal-form__input-wrapper modal-form__input-wrapper--textarea">
+          <textarea
+            name="modal-form__textarea"
+            class="modal-form__input modal-form__input--textarea"
+            id="products-comment-menu"
+            placeholder="Comment"
+          ></textarea
+          ><label for="products-comment" class="modal-form__label">Comment</label>
+        </div>
+      </div>
+      <button class="btn btn--primary" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
 <!-- Modal icecream -->
 <div class="backdrop is-hidden" data-modal="4">
   <div class="modal">
@@ -330,10 +396,9 @@
         </svg>
       </button>
       <h2 class="modal__title">Our Locations</h2>
-
       <iframe
         class="modal__locations-map"
-        src="https://maps.google.com/maps?width=448&amp;height=260&amp;hl=en&amp;q=10340 Ridgeland Ave Chicago Ridge, IL 60415 США&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        src="https://maps.google.com/maps?width=448&amp;height=260&amp;hl=en&amp;q=10340RidgelandAveChicagoRidge,IL60415США&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
