@@ -1,6 +1,8 @@
 .gallery {
   margin: -40px auto 0px auto;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .gallery-image {
@@ -74,7 +76,7 @@
     margin: -40px auto 0px auto;
   }
   .gallery #slider {
-    width: 1160px;
+    width: 1013px;
     border-radius: 24px;
   }
   .gallery-image {
