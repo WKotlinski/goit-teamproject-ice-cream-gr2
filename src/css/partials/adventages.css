@@ -61,3 +61,26 @@
     gap: 0;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .adv-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 32px;
+  }
+  .adv-sec-paragraph {
+    font-size: 16px;
+    line-height: 176%;
+    width: 368px;
+    letter-spacing: 0.32px;
+  }
+  .adv-first-paragraph {
+    font-size: 58px;
+    margin-top: 40px;
+    margin-bottom: 12px;
+  }
+  .adv-layout {
+    gap: 0;
+    margin-bottom: 178px;
+  }
+}
