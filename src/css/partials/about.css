@@ -109,20 +109,20 @@ img {
   width: 100%;
   border-radius: 1038.58px;
   margin-top: 21.82px;
-  box-shadow: 0 -21.82px #EFD478;;
+  box-shadow: 0 -21.82px #efd478;
 }
 
 @media screen and (min-width: 768px) {
   .photo-2 {
     margin-top: 25.88px;
-    box-shadow: 0 -26px #EFD478;
+    box-shadow: 0 -26px #efd478;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .photo-2 {
     margin-top: 39px;
-    box-shadow: 0 -39px #EFD478;
+    box-shadow: 0 -39px #efd478;
   }
 }
 
@@ -172,7 +172,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .description:last-child {
-letter-spacing: 0.48px;
+    letter-spacing: 0.48px;
   }
 }
 
@@ -188,9 +188,9 @@ letter-spacing: 0.48px;
 
 @media screen and (min-width: 768px) {
   .descrition-text {
-line-height: 176%;
-letter-spacing: 0.48px;
-  margin-bottom: 8px;
+    line-height: 176%;
+    letter-spacing: 0.48px;
+    margin-bottom: 8px;
   }
 }
 
@@ -201,22 +201,20 @@ letter-spacing: 0.48px;
 
 @media screen and (min-width: 1200px) {
   .descrition-text {
-font-size: 14px;
-line-height: 194%;
-letter-spacing: 0.56px;
+    font-size: 14px;
+    line-height: 194%;
+    letter-spacing: 0.56px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .descrition-text:first-child {
-font-size: 16px;
-line-height: 176%;
-letter-spacing: 0.64px;
-margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.64px;
+    margin-bottom: 8px;
   }
 }
-
-
 
 .about-btn {
   width: 164px;
@@ -229,7 +227,6 @@ margin-bottom: 8px;
   display: inline-flex;
   gap: 4px;
   cursor: pointer;
-
 }
 
 .about-btn-text {
