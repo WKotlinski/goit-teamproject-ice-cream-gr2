@@ -11,10 +11,40 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .nav-section {
     display: none;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    margin-left: 308px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__list-item {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+  }
+}
+
+.nav__list-item:hover,
+.nav__list-item:focus {
+  color: var(--yellow);
 }
 
 .header-buttons {
@@ -81,6 +111,12 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    background: url(../../images/kropki-desk.png) bottom/1200px 384px no-repeat;
+  }
+}
+
 .hero__section-main-title {
   color: #fcfcfc;
   font-family: Seymour One;
@@ -96,6 +132,21 @@
 @media screen and (min-width: 768px) {
   .passion {
     font-size: 34px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__section-main-title {
+    font-size: 38px;
+    width: 367px;
+    margin-bottom: 40px;
+    height: 144px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .passion {
+    font-size: 38px;
   }
 }
 
@@ -130,6 +181,12 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-buttons {
+    margin-bottom: 54px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .plate-section {
     display: none;
@@ -158,6 +215,12 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-text {
+    margin-top: 60px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .hero-par {
     display: none;
@@ -172,6 +235,12 @@
     max-width: 165px;
     color: var(--white);
     margin-bottom: 29px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-par {
+    font-size: 14px;
   }
 }
 
@@ -209,6 +278,12 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero__list-item {
+    font-size: 14px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero__list-item:not(:last-child) {
     margin-bottom: 20px;
@@ -226,6 +301,11 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .number {
+    font-size: 46px;
+  }
+}
 .hero-img {
   margin: 19px auto;
 }
@@ -234,6 +314,13 @@
   .hero-img {
     margin-bottom: 0;
     margin-top: 65px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-img {
+    margin-top: 31px;
+    margin-left: 160px;
   }
 }
 
