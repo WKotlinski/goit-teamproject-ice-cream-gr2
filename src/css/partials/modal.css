@@ -146,7 +146,7 @@ textarea::placeholder {
   content: '';
   width: 131px;
   height: 131px;
-  background-image: url(/src/images/Ellipse67.jpg);
+  background-image: url(/src/images/ice-cream-desk1x.jpg);
   border-radius: 50%;
   position: absolute;
   top: -7px;
@@ -157,7 +157,8 @@ textarea::placeholder {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .modal__image:after {
-    background-image: url(/src/images/Ellipse67x2.jpg);
+    background-image: url(/src/images/ice-cream-desk2x.jpg);
+    background-size: contain;
   }
 }
 .modal-products-list {
