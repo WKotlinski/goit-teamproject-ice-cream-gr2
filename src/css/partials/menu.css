@@ -48,6 +48,7 @@
 .logo {
   top: 12px;
   left: 32px;
+  cursor: pointer;
 }
 
 .menu-mob__close {
@@ -130,6 +131,7 @@
   stroke: var(--white);
   stroke-width: 3;
   background-color: var(--pastel);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1200px) {
